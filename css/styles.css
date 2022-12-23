@@ -35,7 +35,6 @@ Variables
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -43,16 +42,13 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   width: 100%;
   display: block;
 }
-
 h1,
 h2,
 h3,
@@ -77,7 +73,6 @@ h4 {
 p {
   margin-bottom: 1.25rem;
 }
-
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -180,8 +175,11 @@ Navbar
   z-index: 2;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
   /* hide navbar */
+  transform: translateX(-100%);
+  transition: var(--transition);
 }
 .showNav {
+  transform: translate(0);
 }
 .navbar-header {
   text-align: right;
